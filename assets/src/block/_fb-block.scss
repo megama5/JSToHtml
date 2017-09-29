@@ -1,0 +1,150 @@
+.fb-block{
+	@extend .container;
+	padding: 15px;
+	border: 1px solid $gray;
+	border-radius: 4px;
+
+	//************************************
+	//title
+	//************************************
+	&__header-wraper{
+		display: flex;
+    flex-flow: row;
+    direction: ltr;
+    flex-wrap: nowrap;
+    position: relative;
+    margin-bottom: 10px;
+	}
+	&__logo-wraper{
+    margin-right: 10px;	
+		display: inline-block;
+		overflow: hidden;
+		border: 1px solid $gray;
+		border-radius: 50%;
+	}
+	&__logo{
+		width: 40px;
+		height: 40px;
+	}
+	&__title-wraper{
+		display: inline-block;
+		line-height: 1.4;
+	}
+	&__title-link{
+		color: $blue;
+    font-family: $main;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover{
+    	text-decoration: underline;
+    }
+	}
+	&__menu{
+		width: 20px;
+		height: 20px;
+		top: 0;
+		right: 0;
+		position: absolute;
+		content: '';
+		display: inline-block;
+		background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-size: 64px 145px;
+    background-position: -25px -86px;
+    transition: none;
+    &:hover{
+    	background-position: 0 -107px;
+    }
+	}
+
+	//************************************
+	//content
+	//************************************
+	&__content-wraper{
+
+	}
+	&__content-text{
+		margin-bottom: 10px;
+		line-height: 19.32px; 
+		& p{
+			margin-bottom: 10px;	
+		}
+		& a{
+			color: #365899;
+    	cursor: pointer;
+    	text-decoration: none;
+    	&:hover{
+    		text-decoration: underline;
+    	}
+		}
+	}
+	&__content-subwraper{
+		border: 1px solid $gray;
+		box-shadow: 0 0 3px $gray;
+		margin-bottom: 15px;
+		&:hover{
+			box-shadow: 0 0 7px $gray;
+			cursor: pointer;
+		}
+	}
+	&__content-img-wraper{
+		
+	}
+	&__content-img{
+		width: 100%;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+	}
+
+	//************************************
+	//social button
+	//************************************
+	&__social{
+		
+		& button{
+			border: none;
+    	background: transparent;
+    	padding-left: 25px;
+    	margin-right: 20px;	
+	    color: $gray2;
+    	font-size: 13px;	
+    	text-transform: capitalize;
+    	position: relative;
+    	&:hover{
+    		text-decoration: underline;
+    	}
+    	&::before{
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				width: 20px;
+				height: 20px;
+				content: '';
+				background-image: url('../img/bg1.png');
+	    	background-repeat: no-repeat;
+    	}
+		}
+	}
+	&__social-like{
+		&::before{
+    	background-size: 50px 359px;
+    	background-position: 0 -193px;
+		}
+	}
+	&__social-comment{
+		&::before{
+			background-size: 49px 361px;
+	    background-position: 0 -155px;
+		}
+	}
+	&__social-share{
+		&::before{
+	    background-size: 49px 358px;
+	    background-position: 0 -250px;
+		}
+	}
+	
+
+
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAQ;EACP,OAAO,EAAE,IAAI;EACb,eAAQ;IACP,WAAW,EAAE,cAAc;IACzB,SAAS,EAAE,IAAI;IACf,WAAW,EAAE,GAAG;IAChB,WAAW,EAAE,IAAI;IACjB,aAAa,EAAE,GAAG",
+"sources": ["../../src/block/subpost.scss"],
+"names": [],
+"file": "subpost.css"
+}

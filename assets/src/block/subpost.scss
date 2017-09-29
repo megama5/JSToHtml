@@ -1,0 +1,24 @@
+.subpost{
+	padding: 15px;
+	&__title{
+		font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 5px;
+	}
+	&__text{
+		font-family: $main;
+    line-height: 16px;
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom: 5px;
+	}
+	&__link{
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $gray1;
+		font-size: 11px;
+    line-height: 11px;
+	}
+}

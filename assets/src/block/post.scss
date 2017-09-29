@@ -1,0 +1,29 @@
+.post{
+	display: flex;
+  align-items: center;
+	&__time{
+		font-family: $main;
+		text-decoration: none;
+		color: $gray1;
+	  &:hover{
+    	text-decoration: underline;
+    }
+	}
+	&__separator{
+		width: 12px;
+		height: 12px;
+		color: $gray1;
+		display: inline-block;
+		text-align: center;
+    line-height: 5px;
+	}
+	&__icon{
+		width: 12px;
+		height: 12px;
+		display: inline-block;
+		background-image: url('../img/bg.png');
+    background-size: 64px 145px;
+    background-repeat: no-repeat;
+    background-position: -51px -56px;
+	}
+}
